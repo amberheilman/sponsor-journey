@@ -56,4 +56,7 @@ html {
         height: 300px;
         box-shadow: none;
     }
+    .padded {
+        padding: 1%;
+    }
 }
