@@ -14,7 +14,7 @@
     <link rel="mask-icon" href="{{ url_for('static', filename='favicon.ico', _external=True, _scheme=scheme) }}" color="#5bbad5">
 </head>
 <body>
-  <div class="container">
+  <div class="container-lg">
       <div class="heading">
       {% if error %}
         <div class="alert alert-danger" role="alert">
@@ -22,8 +22,8 @@
         </div>
       {% endif %}
       <div class="item">
-          <h1>Thanks for signing up!</h1>
-          <h4>We'll keep you in the loop about {{ name }}, and let you know about all the big events along their journey!</h4>
+          <h2>Thanks for signing up!</h2>
+          <h4>We'll keep you in the loop about <b>{{ name }}</b>, and let you know about all the big events along their journey!</h4>
           Check out all our <a href="https://www.straycatblues.org/adoptable" class="available-link">available cats</a>.</h3>
       </div>
       <div class="item cat-img"><img src="{{ img }}"></div>

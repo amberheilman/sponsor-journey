@@ -1,5 +1,10 @@
 .container {
+    height: 100%;
     margin-top: 45px;
+    width: 40%;
+}
+.container-lg {
+    width: auto;
 }
 .heading {
     display: flex;
@@ -9,6 +14,7 @@
     justify-content: space-between;
 }
 body {
+    height: 100%;
     background: none;
 }
 html {
@@ -34,12 +40,25 @@ html {
     font-weight: 500;
     text-decoration: underline;
 }
-
+.form-group {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.privacy-stmt {
+    color: #212529a1;
+}
+.title {
+    margin-bottom: 2em;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4em;
+}
 @media all and (max-width: 1000px) {
     .container {
         padding: 0;
         margin: 0;
         width: 100%;
+        line-height: 1.6;
     }
     .item {
         width: 100%;
@@ -57,6 +76,9 @@ html {
         box-shadow: none;
     }
     .padded {
-        padding: 1%;
+        padding: 5%;
+    }
+    button {
+        width: 100%;
     }
 }

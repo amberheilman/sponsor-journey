@@ -15,19 +15,14 @@
 </head>
 <body>
   <div class="container padded">
-      <h1 class="heading">Stay In Touch!</h1>
-      <h4>Sign up and receive important emails on {{ name }}'s journey to their forever home.</h4>
-      <h6>We respect your privacy and do not share with anyone. You may unsubscribe at any time by emailing <a href="mailto:straycatblues.sponsorcat@gmail.com">straycatblues.sponsorcat@gmail.com</a>.</h6>
+      <div class="title"><h1 class="heading">Stay In Touch!</h1></div>
+      <div class="sub-title"><h4>Sign up and receive important emails on <b>{{ name }}'s</b> journey to their forever home.</h4></div>
+      <div class="privacy-stmt"><h6>We respect your privacy and do not share with anyone. You may unsubscribe at any time by emailing <a href="mailto:straycatblues.sponsorcat@gmail.com">straycatblues.sponsorcat@gmail.com</a>.</h6></div>
       <div class="container-login">
-          {% if error %}
-            <div class="alert alert-danger" role="alert">
-              {{ error }}
-            </div>
-          {% endif %}
         <form action="" method=post>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="email" value="{{ email }}">
+            <label for="exampleInputEmail">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email address" name="email">
           </div>
           <button type="submit" class="btn btn-light">Sign Me Up!</button>
           <input type=hidden value="{{ _next or '' }}" name=next>
